@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function inArray(arr, value) {
+      for(const elem of arr) {
+        if(elem === value) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+  const arrNumbers = [45, 43, 111, 15, 24];
+
+    console.log(inArray(arrNumbers, 42));
+    console.log(inArray(arrNumbers, 24));
+  </script>
+</body>
+</html>

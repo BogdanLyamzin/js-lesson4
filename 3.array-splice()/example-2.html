@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const sallaries = [45300, 12500, 14000, 25000];
+
+    const highSallary = +prompt("Какая зарплата вас устраивает?");
+
+    // const highSallaries = [];
+    // for(const item of sallaries) {
+    //   if(item >= highSallary){
+    //     highSallaries.push(item)
+    //   }
+    // }
+
+    // console.log(highSallaries);
+    for(let i = 0; i < sallaries.length; i += 1) {
+      if(sallaries[i] < highSallary){
+        sallaries.splice(i, 1);
+        // [45300, 14000, 25000];
+      }
+    }
+    console.log(sallaries)
+
+  </script>
+</body>
+</html>

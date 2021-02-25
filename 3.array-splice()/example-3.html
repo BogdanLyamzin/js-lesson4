@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const heroes = ["Гарри Поттер", "Гермиона Грейнджер", "Рон Уизли"];
+    const worstHero = prompt("Кто ваш нелюбимый герой в Гарри Поттере?")
+    const lowerWorstHero = worstHero.toLowerCase()
+    /*
+    1. Найти индекс введного персонажа.
+    2. Вырезать его из массива. 
+    3. Вывести новый массив на экран. 
+    */
+   const lowerHeroes = [];
+   for(const hero of heroes){
+     const str = hero.toLowerCase();
+     lowerHeroes.push(str);
+   }
+   const idx = lowerHeroes.indexOf(lowerWorstHero);
+   if(idx !== -1) {
+    heroes.splice(idx, 1);
+    console.log(heroes);
+   }
+   else {
+     alert("Такого героя нет в списке")
+   }
+   
+    </script>
+</body>
+</html>

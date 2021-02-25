@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      const sallaries = [4600, 12000, 56000, 5000];
+      const newMinSallary = +prompt("Введите новую минимальную зарплату");
+
+      const highSallaries = [];
+      for(const item of sallaries){
+        if(item > newMinSallary) {
+          highSallaries.push(item)
+        }
+      }
+      console.log(highSallaries)
+      
+      for(let i = 0; i < sallaries.length; i++){
+        if(sallaries[i] < newMinSallary){
+          sallaries[i] = newMinSallary
+        }
+      }
+      console.log(sallaries)
+
+
+    </script>
+</body>
+</html>
